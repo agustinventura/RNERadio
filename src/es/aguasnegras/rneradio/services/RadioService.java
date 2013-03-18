@@ -14,6 +14,7 @@ import android.os.IBinder;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import es.aguasnegras.rneradio.R;
+import es.aguasnegras.rneradio.activities.MainActivity;
 import es.aguasnegras.rneradio.services.binders.RadioServiceBinder;
 import es.aguasnegras.rneradio.utils.CallManager;
 import es.aguasnegras.rneradio.utils.Logger;
@@ -152,7 +153,7 @@ public class RadioService extends Service {
 	public void updateNotification() {
 		Notification notification = null;
 		Context context = getApplicationContext();
-		Intent notificationIntent = new Intent(this, MediaPlayer.class);
+		Intent notificationIntent = new Intent(this, MainActivity.class);
 		notificationIntent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 		PendingIntent contentIntent = PendingIntent.getActivity(this, 0,
 				notificationIntent, 0);
