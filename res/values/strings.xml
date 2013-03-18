@@ -5,5 +5,9 @@
     <string name="menu_settings">Settings</string>
     <string name="listen_classical">Radio Clásica</string>
     <string name="stop_classical">Stop Radio Clásica</string>
-
+    
+    <string name="playing">Reproduciendo</string>
+	<string name="paused">En Pausa</string>
+	<string name="stopped">Parado</string>
+	<string name="error">Error</string>
 </resources>
